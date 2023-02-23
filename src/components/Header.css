@@ -1,0 +1,21 @@
+
+.nb{
+  border-radius: 20px;
+  
+}
+
+.txt:hover {
+  text-decoration: underline;
+}
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #212428;
+  
+  
+}
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
