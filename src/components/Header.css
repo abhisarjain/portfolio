@@ -19,3 +19,9 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.nav-link.active {
+  
+ border-bottom: 3px solid #ff014f;
+
+}

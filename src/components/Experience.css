@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+.workex{
+    color: white;
+  margin-bottom: 4%;
+  /* margin-top: 4%; */
+  background: #ff014f;
+  width: fit-content;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 5px;
+  
+}
 .choose{
     background-color: #ff014f;
 }
@@ -34,7 +45,7 @@
 }
 .timeline-item:nth-child(odd){
     padding-right: calc(50% + 30px);
-	text-align: right;
+	/* text-align: right; */
 }
 .timeline-item:nth-child(even){
     padding-left: calc(50% + 30px);
@@ -89,3 +100,18 @@
 		left:0;
 	}
 }
+
+@media only screen and (max-device-width: 480px) {
+	.workex{
+		color: white;
+	  margin-bottom: 20%;
+	  margin-top: 5%;
+	  background: #ff014f;
+	  width: fit-content;
+	  border-radius: 10px;
+	  font-size: 15px;
+	  padding: 5px;
+	  
+	}
+	
+	  }

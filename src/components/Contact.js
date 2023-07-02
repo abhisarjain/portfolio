@@ -18,7 +18,7 @@ export default function Contact() {
 
 
 
-  return (
+  return ( 
   
     <>
       <div className="contact animate__fadeInDown animate__animated">

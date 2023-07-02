@@ -76,6 +76,15 @@
   padding: 5px;
 }
 
+@media only screen and (max-device-width: 480px) {
+.contactlist{
+    max-width: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+  }
+
 
 
 

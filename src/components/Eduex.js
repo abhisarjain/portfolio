@@ -3,12 +3,15 @@ import './Experience.css';
 import Experience from './Experience';
 import 'animate.css';
 export default function Eduex() {
+	const contact = "<Education Experience>";
+	const contactend = "</Education Experience>";
   return (
     <>
-      <Experience/>
+      {/* <Experience/> */}
 
 
       <section className="timeline-section animate__fadeInDown animate__animated">
+	  <h1 className='workex'>{contact}</h1>
 	<div className="timeline-items">
 
     <div className="timeline-item">
@@ -16,7 +19,7 @@ export default function Eduex() {
 			<div className="timeline-date">2019 - Present</div>
 			<div className="timeline-content">
 				<h3>Bachelor of Technology in Computer Science (Data Science Specialization) | The Northcap University | Gurgaon, Haryana</h3>
-				<p>CURRENT CGPA : 8.8  </p>
+				<p>CGPA : 8.72  </p>
 			</div>
 		</div>
 		
@@ -43,6 +46,7 @@ export default function Eduex() {
 
 		
 	</div>
+	<h1 className='workex my-5'>{contactend}</h1>
 </section>
     </>
   )
