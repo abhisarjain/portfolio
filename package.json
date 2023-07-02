@@ -1,6 +1,5 @@
 {
   "name": "portfolio",
-  
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,12 +19,11 @@
     "react-dom": "^18.2.0",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^6.8.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

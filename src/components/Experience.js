@@ -1,7 +1,5 @@
 import React, { Suspense } from 'react';
-import { Link } from 'react-router-dom';
 import "./Experience.css";
-import Eduex from "./Eduex"
 import Workex from "./Workex"
 const OtherComponent = React.lazy(() => import('./Eduex'));
 export default function Experience() {

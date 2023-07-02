@@ -1,6 +1,5 @@
 import React from "react";
 import "./Skills.css";
-import Fade from "react-reveal/Fade";
 import "animate.css";
 export default function Skills() {
   const skills = " <Skills> ";

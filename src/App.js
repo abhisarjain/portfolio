@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -6,17 +6,16 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects'
 import Contact from './components/Contact'
-import Eduex from './components/Eduex';
+
 
 import {
-  createBrowserRouter,
-  RouterProvider,
+
   BrowserRouter,
   Route,
-  Router,
+
   Routes,
 } from "react-router-dom";
-import Workex from './components/Workex';
+
 import Certifications from './components/Certifications';
 function App() {
   return (

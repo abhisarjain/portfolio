@@ -1,7 +1,5 @@
 import React from "react";
-// import img from './images/image.jpg';
 import "./Home.css";
-import Fade from "react-reveal/Fade";
 import "animate.css";
 export default function Home() {
   return (

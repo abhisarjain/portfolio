@@ -1,6 +1,5 @@
 import React from 'react'
 import './Experience.css';
-import Experience from './Experience';
 import 'animate.css';
 export default function Eduex() {
 	const contact = "<Education Experience>";
