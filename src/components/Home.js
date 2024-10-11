@@ -16,12 +16,13 @@ export default function Home() {
           </h1>
           {/* <h1 className='typed2'> <b> Hi, I am Abhisar Jain</b></h1> */}
           <h4>
-            I am a recent graduate with a B.Tech degree in Computer Science,
-            specializing in Data Science. Throughout my academic journey, I have
-            been a self-motivated and patient student, driven by my passion for
-            technology and its applications. I have developed a keen interest in
-            Full Stack Development and am eager to explore career opportunities
-            in the IT sector.
+            // I am a recent graduate with a B.Tech degree in Computer Science,
+            // specializing in Data Science. Throughout my academic journey, I have
+            // been a self-motivated and patient student, driven by my passion for
+            // technology and its applications. I have developed a keen interest in
+            // Full Stack Development and am eager to explore career opportunities
+            // in the IT sector.
+            A self-motivated and patient Full Stack Developer with AWS having 1 year of experience in designing, developing, and deploying scalable applications. Passionate about leveraging technology to create seamless user experiences and drive business growth.
           </h4>
         </div>
       </div>
