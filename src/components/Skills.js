@@ -4,9 +4,10 @@ import "animate.css";
 export default function Skills() {
   const skills = " <Skills> ";
   const skillsend = "</Skills>";
+  const otherskills = " <Other Skills> ";
+  const otherskillsend = "</Other Skills>";
   return (
     <>
-
       <div className="skills animate__fadeInDown animate__animated">
         <h1 className="h1skill"> {skills} </h1>
         <div className="listing">
@@ -14,34 +15,10 @@ export default function Skills() {
             <div className="flip-card" tabIndex="0">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <img src="./java.png" alt="" />
+                  <img src="./springboot.png" alt="" />
                 </div>
                 <div className="flip-card-back">
-                  <h3>JAVA</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="item2">
-            <div className="flip-card" tabIndex="0">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <img src="./python.png" alt="" />
-                </div>
-                <div className="flip-card-back">
-                  <h3>PYTHON</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="item3">
-            <div className="flip-card" tabIndex="0">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <img src="./django.png" alt="" />
-                </div>
-                <div className="flip-card-back">
-                  <h3>DJANGO</h3>
+                  <h3>SPRING BOOT</h3>
                 </div>
               </div>
             </div>
@@ -50,7 +27,7 @@ export default function Skills() {
             <div className="flip-card" tabIndex="0">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <img src="./react1.png" alt="" />
+                  <img src="./react.png" alt="" />
                 </div>
                 <div className="flip-card-back">
                   <h3>REACT</h3>
@@ -58,14 +35,14 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          <div className="item5">
+          <div className="item2">
             <div className="flip-card" tabIndex="0">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <img src="./spring.svg" alt="" />
+                  <img src="./aws.png" alt="" />
                 </div>
                 <div className="flip-card-back">
-                  <h3>SPRING</h3>
+                  <h3>AMAZON WEB SERVICES</h3>
                 </div>
               </div>
             </div>
@@ -82,50 +59,26 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          <div className="item7">
+          <div className="item6">
             <div className="flip-card" tabIndex="0">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <img src="./dsa.png" alt="" />
+                  <img src="./redis.png" alt="" />
                 </div>
                 <div className="flip-card-back">
-                  <h3>DSA</h3>
+                  <h3>REDIS</h3>
                 </div>
               </div>
             </div>
           </div>
-          <div className="item8">
+          <div className="item3">
             <div className="flip-card" tabIndex="0">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <img src="./html.png" alt="" />
+                  <img src="./django.png" alt="" />
                 </div>
                 <div className="flip-card-back">
-                  <h3>HTML</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="item9">
-            <div className="flip-card" tabIndex="0">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <img src="./css.png" alt="" />
-                </div>
-                <div className="flip-card-back">
-                  <h3>CSS</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="item10">
-            <div className="flip-card" tabIndex="0">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <img src="./dbms.png" alt="" />
-                </div>
-                <div className="flip-card-back">
-                  <h3>DBMS</h3>
+                  <h3>DJANGO</h3>
                 </div>
               </div>
             </div>
@@ -133,9 +86,10 @@ export default function Skills() {
         </div>
 
         <h1 className="h1skill">{skillsend}</h1>
-  
+        {/* <h1 className="h1skill"> {otherskills} </h1>
+        <div className="listing"></div>
+        <h1 className="h1skill">{otherskillsend}</h1> */}
       </div>
-      
     </>
   );
 }
