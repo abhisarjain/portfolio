@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #000; /* fallback */
+
+  background-image: url("./assets/images/bg-grid.png");
+
+  background-size: cover;       /* full screen cover */
+  background-position: center;  /* center align */
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+
+  color: white;
+
+  font-family: Inter, system-ui, Arial, sans-serif;
+}

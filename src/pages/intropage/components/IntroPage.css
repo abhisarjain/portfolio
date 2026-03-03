@@ -1,0 +1,275 @@
+.intro-container {
+
+    height: 100vh;
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* video positioning */
+.video-wrapper {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    transition: left 1.5s ease, transform 1.5s ease;
+
+}
+
+.video-wrapper.move-left {
+
+    left: 40px;
+    transform: translateY(-50%);
+
+}
+
+/* video appear */
+.intro-video {
+
+    width: 420px;
+    max-width: 90%;
+
+    opacity: 0;
+    transform: scale(0.6);
+
+    animation: videoAppear 1.5s ease forwards;
+
+}
+
+@keyframes videoAppear {
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* CARD behind text */
+.intro-card {
+
+    position: absolute;
+    left: 25%;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    padding: 40px 60px;
+
+    background: rgba(40, 40, 40, 0.6);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 12px;
+
+    animation: cardGrow 0.6s ease;
+
+}
+
+@keyframes cardGrow {
+
+    from {
+        opacity: 0;
+        transform: translateY(-50%) scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-50%) scale(1);
+    }
+
+}
+
+
+/* small I am */
+.intro-small {
+
+    font-size: 2vw;
+    margin: 0;
+    opacity: 0.8;
+
+}
+
+
+/* huge name */
+.intro-heading {
+
+    font-size: 9vw;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+    margin: 0;
+
+}
+
+
+/* cursor */
+.cursor {
+
+    animation: blink 1s infinite;
+
+}
+
+@keyframes blink {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+
+}
+
+
+/* speech bubble */
+.speech-bubble {
+
+    position: absolute;
+
+    top: -20px;
+    /* avatar ke upar */
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: white;
+    color: black;
+
+    padding: 10px 18px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    backdrop-filter: blur(6px);
+
+    animation: bubbleFade 0.8s ease;
+
+}
+
+/* small triangle */
+.speech-bubble::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-width: 8px;
+    border-style: solid;
+
+    border-color: white transparent transparent transparent;
+
+}
+
+/* animation */
+@keyframes bubbleFade {
+
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+}
+
+/* BIO CARD */
+.bio-card {
+
+    position: absolute;
+    left: 25%;
+    top: 82%;
+
+    transform: translateY(-50%);
+
+
+
+    padding: 40px 60px;
+
+    background: rgba(40, 40, 40, 0.6);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 12px;
+
+    animation: bioFadeUp 0.8s ease forwards;
+
+}
+
+/* fade up animation */
+@keyframes bioFadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(-50%) translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-50%) translateY(0);
+    }
+
+}
+
+/* bio text */
+.bio-text {
+
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.85;
+
+    margin-bottom: 20px;
+
+}
+
+/* aesthetic white button */
+.start-btn {
+
+    background: white;
+    color: black;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+}
+
+/* hover effect */
+.start-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+
+}
