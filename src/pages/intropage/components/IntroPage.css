@@ -273,3 +273,136 @@
     box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
 
 }
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 1024px) {
+
+    .video-wrapper,
+    .video-wrapper.move-left {
+        left: 50% !important;
+        top: 28%;
+        transform: translate(-50%, -50%) !important;
+    }
+
+    .intro-video {
+        width: 260px;
+    }
+
+    .intro-card {
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        padding: 25px 30px;
+        text-align: center;
+    }
+
+    .intro-heading {
+        font-size: 11vw;
+    }
+
+    .bio-card {
+        left: 50%;
+        top: 78%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+        padding: 25px 30px;
+        text-align: center;
+    }
+
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .video-wrapper,
+    .video-wrapper.move-left {
+
+        left: 50% !important;
+        top: 25%;
+
+        transform: translate(-50%, -50%) !important;
+
+    }
+
+    .intro-video {
+        width: 200px;
+    }
+
+    .speech-bubble {
+        font-size: 8px;
+        padding: 8px 14px;
+        top: -40px;
+    }
+
+    .intro-card {
+
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+
+        width: 80%;
+
+        padding: 25px;
+
+        text-align: center;
+
+    }
+
+    .intro-heading {
+        font-size: 48px !important;
+    }
+
+    .intro-small {
+        font-size: 14px;
+    }
+
+    .bio-card {
+
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+
+        width: 80%;
+        top: 78%;
+        margin-top: 30px;
+        padding: 25px;
+
+    }
+
+    .bio-text {
+        font-size: 14px;
+    }
+
+    .start-btn {
+        width: 100%;
+    }
+
+}
+
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+    .intro-video {
+        width: 170px;
+    }
+
+    .intro-heading {
+        font-size: 14vw;
+    }
+
+    .bio-card {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+}
