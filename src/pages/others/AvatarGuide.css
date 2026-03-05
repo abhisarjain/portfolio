@@ -2,7 +2,7 @@
 
 .avatar-wrapper {
 
-  position: fixed;
+  position: absolute;
 
   left: -400px;
   top: 50%;
@@ -19,7 +19,7 @@
 
 .avatar-enter {
 
-  left: 180px;
+  left: 10%;
 
 }
 
@@ -28,7 +28,7 @@
 .avatar-video {
 
   width: 420px;
-  max-width: 90%;
+  max-width: 80%;
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
 
 }
@@ -84,41 +84,10 @@ border-color:white transparent transparent transparent;
 
 @media (max-width:1024px){
 
-.avatar-wrapper {
 
-  position: fixed;
-
-  left: -400px;
-  top: 36%;
-
-  transform: translateY(-50%);
-
-  transition: left 1s ease;
-
-  z-index: 50;
-
-}
 .avatar-enter {
 
-  left: 5px;
-
-}
-
-/* avatar video */
-
-.avatar-video {
-
-  width: 300px;
-  max-width: 100%;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
-
-}
-.speech-bubble {
-
-
-
-  top: -51px;
-
+  left: 0%;
 
 }
 
@@ -131,44 +100,9 @@ border-color:white transparent transparent transparent;
 
 @media (max-width:768px){
 
-.avatar-wrapper {
-
-  position: fixed;
-
-  left: -400px;
-  top: 40%;
-
-  transform: translateY(-50%);
-
-  transition: left 1s ease;
-
-  z-index: 50;
-
+.avatar-wrapper{
+    top: 59%;
 }
-.avatar-enter {
-
-  left: 5px;
-
-}
-
-/* avatar video */
-
-.avatar-video {
-
-  width: 170px;
-  max-width: 90%;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
-
-}
-.speech-bubble {
-
-
-
-  top: -120px;
-
-
-}
-
 
 }
 /* ========================= */
@@ -176,37 +110,30 @@ border-color:white transparent transparent transparent;
 /* ========================= */
 
 @media (max-width:480px){
-.avatar-wrapper {
 
-  position: fixed;
-
-  left: 130px;
+/* avatar top center */
 
 
-  transform: translateY(-50%);
 
-  transition: left 1s ease;
 
-  z-index: 50;
-
+.avatar-wrapper{
+    top: 45%;
 }
 
-/* avatar video */
-
-.avatar-video {
-
-  width: 170px;
-  max-width: 90%;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
-
+.avatar-video{
+    max-width: 180px;
 }
-.speech-bubble {
-
-
-
-  top: -120px;
-
-
+.avatar-enter{
+    left: 25%;
+}
+.speech-bubble{
+    top:-45px;
+    left:63%;
+    width: max-content;
+}
+.speech-bubble::after{
+    bottom: -36px;
+    left: 44%;
 }
 
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import avatarVideo from "../../assets/videos/intrro.webm";
+import avatarVideo from "../../assets/videos/avatar.webm";
 import "./AvatarGuide.css";
 
 export default function AvatarGuide({ message, animate }) {

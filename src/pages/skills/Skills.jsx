@@ -1,55 +1,70 @@
 import AvatarGuide from "../others/AvatarGuide";
 import "./components/Skills.css";
-
+import { useEffect, useState } from "react";
 import reactIcon from "../../assets/images/react.png";
-import springIcon from "../../assets/images/react.png";
-import awsIcon from "../../assets/images/react.png";
-import postgresIcon from "../../assets/images/react.png";
-import dockerIcon from "../../assets/images/react.png";
+import springIcon from "../../assets/images/springboot.png";
+import awsIcon from "../../assets/images/aws.png";
+import djangoIcon from "../../assets/images/django.png";
+import mysqlIcon from "../../assets/images/mysql.png";
+import redisIcon from "../../assets/images/redis.png";
 
-export default function Skills(){
+export default function Skills() {
+    const [showContent, setShowContent] = useState(false);
 
-return(
+    useEffect(() => {
 
-<div className="skills-container">
+        setTimeout(() => {
+            setShowContent(true);
+        }, 800); // pause after navbar
 
-<AvatarGuide 
-message="These are my skills 💻"
-animate={true}
-/>
+    }, []);
 
-<div className="skills-right">
+    return (
 
-<h2 className="skills-title">
-Skills
-</h2>
+        <div className="skills-container">
+            {showContent && (<>
+                <AvatarGuide
+                    message="These are my skills 💻"
+                    animate={true}
+                />
 
-<h3 className="primary-title">
-Primary Skills
-</h3>
 
-<div className="primary-icons">
+                <div className="skills-right">
 
-<img src={reactIcon} alt="React"/>
-<img src={springIcon} alt="Spring"/>
-<img src={awsIcon} alt="AWS"/>
-<img src={postgresIcon} alt="Postgres"/>
-<img src={dockerIcon} alt="Docker"/>
+                    <h2 className="skills-title">
+                        Skills
+                    </h2>
 
-</div>
+                    <h3 className="primary-title">
+                        Primary Skills
+                    </h3>
 
-<h3 className="other-title">
-Other Skills
-</h3>
+                    <div className="primary-icons">
 
-<p className="other-skills">
-JavaScript • TypeScript • Java • MySQL • Git • Tailwind
-</p>
+                        <img src={reactIcon} alt="React" />
+                        <img src={springIcon} alt="Spring" />
+                        <img src={awsIcon} alt="AWS" />
+                        <img src={djangoIcon} alt="Django" />
+                        <img src={mysqlIcon} alt="MySQL" />
+                        <img src={redisIcon} alt="Redis" />
 
-</div>
+                    </div>
+                     <p className="other-skills">
+                        React.js • Springboot • AWS • Django • MySQL • Redis
+                    </p>
 
-</div>
+                    <h3 className="other-title">
+                        Other Skills
+                    </h3>
 
-);
+                    <p className="other-skills">
+                        Vite • Git • Docker • Swagger • Microservices • Azure • Linux • Jira • Axios
+                    </p>
+
+                </div>
+            </>)}
+        </div>
+
+    );
 
 }

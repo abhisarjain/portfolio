@@ -5,9 +5,10 @@
 
     display: flex;
     align-items: center;
+ 
 
+    position: relative;
     
-    padding-right: 120px;
 
 }
 
@@ -17,17 +18,16 @@
 
 .skills-right {
 
-    margin-left: auto;
-    margin-right: 220px;
+    position: absolute;
 
-    width:750px;
-padding:70px;
-
+    width:40%;
+    padding:70px;
+    left: 37%;
     background: rgba(40, 40, 40, 0.6);
 
     backdrop-filter: blur(10px);
 
-    justify-content: flex-end;
+   
 
     border-radius: 12px;
     animation: skillsEnter 1s ease forwards;
@@ -88,7 +88,7 @@ padding:70px;
     display: flex;
     gap: 25px;
 
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
 }
 
@@ -148,32 +148,10 @@ filter:drop-shadow(0 0 5px rgba(255,255,255,0.6));
 
 @media (max-width:1024px){
 
-.skills-container {
-
-    height: 100vh;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    padding-right: 0;
-    padding-left: 0;
-
-}
-
-
-.skills-right{
-
-width:80%;
-margin-top:200px;
-
-}
-
 .primary-icons{
 
-justify-content:center;
 flex-wrap:wrap;
+justify-content:center;
 
 }
 
@@ -183,31 +161,41 @@ flex-wrap:wrap;
 /* ========================= */
 
 @media (max-width:768px){
-.skills-container {
 
-    height: 100vh;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-   padding-right:0;
-padding-left:0;
-
+.skills-right{
+    top : 28%;
 }
+}
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
 
+@media (max-width:480px){
+  /* skills card niche */
+
+  .skills-container{
+    overflow: scroll;
+  }
 
 .skills-right{
 
-width:90%;
-padding:30px;
+width:75%;
+
+left:6.5%;
+top:70%;
+
+transform:translateX(-50%);
+
+padding:25px;
 
 }
 
-.skills-title{
+/* icons wrap */
 
-font-size:28px;
+.primary-icons{
+
+flex-wrap:wrap;
+justify-content:center;
 
 }
 
@@ -215,57 +203,19 @@ font-size:28px;
 
 width:55px;
 height:55px;
+scale:1.2;
 
 }
+.skills-title {
 
-.other-skills{
-
-font-size:14px;
-
-}
-
-}
-/* ========================= */
-/* SMALL PHONES */
-/* ========================= */
-
-@media (max-width:480px){
-.skills-container {
-
-    height: 100vh;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-
-padding-right:0;
-padding-left:0;
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
 
 }
+.primary-title {
 
-
-.skills-right{
-
-width:92%;
-padding:25px;
-margin-left:auto;
-margin-right:auto;
+    margin-bottom: 20px;
 
 }
-
-.skills-title{
-
-font-size:24px;
-
-}
-
-.primary-icons img{
-
-width:45px;
-height:45px;
-
-}
-
 }
