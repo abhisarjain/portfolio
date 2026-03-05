@@ -8,6 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    /* add this */
 
 }
 
@@ -403,6 +405,42 @@
     .bio-card {
         width: 80%;
         margin-top: 30px;
+    }
+
+}
+
+/* ===================== */
+/* EXIT ANIMATIONS */
+/* ===================== */
+
+.exit-right{
+animation: exitRight 1s cubic-bezier(.7,-0.2,.2,1);
+}
+
+.exit-left{
+animation: exitLeft 1s cubic-bezier(.7,-0.2,.2,1);
+}
+
+@keyframes exitRight {
+
+    to {
+
+        opacity: 0;
+
+        transform: translateX(400px);
+
+    }
+
+}
+
+@keyframes exitLeft {
+
+    to {
+
+        opacity: 0;
+
+        transform: translateX(-400px);
+
     }
 
 }

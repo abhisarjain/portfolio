@@ -1,0 +1,214 @@
+/* avatar container */
+
+.avatar-wrapper {
+
+  position: fixed;
+
+  left: -400px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  transition: left 1s ease;
+
+  z-index: 50;
+
+}
+
+/* animation when entering */
+
+.avatar-enter {
+
+  left: 180px;
+
+}
+
+/* avatar video */
+
+.avatar-video {
+
+  width: 420px;
+  max-width: 90%;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+
+}
+
+/* speech bubble */
+
+.speech-bubble {
+
+  position: absolute;
+
+  top: -14px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: white;
+  color: black;
+
+  padding: 10px 18px;
+
+  border-radius: 12px;
+
+  font-size: 14px;
+
+  letter-spacing: 1px;
+
+}
+
+/* bubble triangle */
+
+.speech-bubble::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-40px;
+left:50%;
+
+transform:translateX(-50%);
+
+border-width:8px;
+border-style:solid;
+
+border-color:white transparent transparent transparent;
+
+}
+
+
+/* ========================= */
+/* Tablets */
+/* ========================= */
+
+@media (max-width:1024px){
+
+.avatar-wrapper {
+
+  position: fixed;
+
+  left: -400px;
+  top: 36%;
+
+  transform: translateY(-50%);
+
+  transition: left 1s ease;
+
+  z-index: 50;
+
+}
+.avatar-enter {
+
+  left: 5px;
+
+}
+
+/* avatar video */
+
+.avatar-video {
+
+  width: 300px;
+  max-width: 100%;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+
+}
+.speech-bubble {
+
+
+
+  top: -51px;
+
+
+}
+
+
+
+}
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width:768px){
+
+.avatar-wrapper {
+
+  position: fixed;
+
+  left: -400px;
+  top: 40%;
+
+  transform: translateY(-50%);
+
+  transition: left 1s ease;
+
+  z-index: 50;
+
+}
+.avatar-enter {
+
+  left: 5px;
+
+}
+
+/* avatar video */
+
+.avatar-video {
+
+  width: 170px;
+  max-width: 90%;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+
+}
+.speech-bubble {
+
+
+
+  top: -120px;
+
+
+}
+
+
+}
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width:480px){
+.avatar-wrapper {
+
+  position: fixed;
+
+  left: 130px;
+
+
+  transform: translateY(-50%);
+
+  transition: left 1s ease;
+
+  z-index: 50;
+
+}
+
+/* avatar video */
+
+.avatar-video {
+
+  width: 170px;
+  max-width: 90%;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+
+}
+.speech-bubble {
+
+
+
+  top: -120px;
+
+
+}
+
+
+
+}

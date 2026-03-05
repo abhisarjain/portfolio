@@ -1,0 +1,271 @@
+.skills-container {
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    
+    padding-right: 120px;
+
+}
+
+
+
+/* right section */
+
+.skills-right {
+
+    margin-left: auto;
+    margin-right: 220px;
+
+    width:750px;
+padding:70px;
+
+    background: rgba(40, 40, 40, 0.6);
+
+    backdrop-filter: blur(10px);
+
+    justify-content: flex-end;
+
+    border-radius: 12px;
+    animation: skillsEnter 1s ease forwards;
+
+}
+
+@keyframes skillsEnter {
+
+    from {
+
+        transform: translateX(200px);
+        opacity: 0;
+
+    }
+
+    to {
+
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+
+}
+
+.skills-title {
+
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.skills-title::after {
+
+    content: "";
+
+    display: block;
+
+    width: 80px;
+    height: 2px;
+
+    background: white;
+
+    margin-top: 10px;
+
+}
+
+.primary-title {
+
+    margin-bottom: 20px;
+
+}
+
+/* icons */
+
+.primary-icons {
+
+    display: flex;
+    gap: 25px;
+
+    margin-bottom: 40px;
+
+}
+
+.primary-icons img {
+
+    width: 70px;
+    height: 70px;
+    scale: 1.5;
+    transition: 0.3s;
+
+
+}
+
+.primary-icons img:hover {
+
+    transform: scale(1.2);
+
+filter:drop-shadow(0 0 5px rgba(255,255,255,0.6));
+
+}
+
+/* other skills */
+
+.other-title {
+
+    margin-bottom: 10px;
+    margin-top: 30px;
+    position: relative;
+
+}
+
+.other-title::before {
+
+    content: "";
+
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.2);
+
+    margin-bottom: 20px;
+
+}
+
+.other-skills {
+
+    opacity: 0.8;
+
+}
+
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width:1024px){
+
+.skills-container {
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+
+.skills-right{
+
+width:80%;
+margin-top:200px;
+
+}
+
+.primary-icons{
+
+justify-content:center;
+flex-wrap:wrap;
+
+}
+
+}
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width:768px){
+.skills-container {
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+   padding-right:0;
+padding-left:0;
+
+}
+
+
+.skills-right{
+
+width:90%;
+padding:30px;
+
+}
+
+.skills-title{
+
+font-size:28px;
+
+}
+
+.primary-icons img{
+
+width:55px;
+height:55px;
+
+}
+
+.other-skills{
+
+font-size:14px;
+
+}
+
+}
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width:480px){
+.skills-container {
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+
+padding-right:0;
+padding-left:0;
+
+}
+
+
+.skills-right{
+
+width:92%;
+padding:25px;
+margin-left:auto;
+margin-right:auto;
+
+}
+
+.skills-title{
+
+font-size:24px;
+
+}
+
+.primary-icons img{
+
+width:45px;
+height:45px;
+
+}
+
+}
