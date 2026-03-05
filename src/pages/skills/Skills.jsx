@@ -30,11 +30,11 @@ Primary Skills
 
 <div className="primary-icons">
 
-<img src={reactIcon}/>
-<img src={springIcon}/>
-<img src={awsIcon}/>
-<img src={postgresIcon}/>
-<img src={dockerIcon}/>
+<img src={reactIcon} alt="React"/>
+<img src={springIcon} alt="Spring"/>
+<img src={awsIcon} alt="AWS"/>
+<img src={postgresIcon} alt="Postgres"/>
+<img src={dockerIcon} alt="Docker"/>
 
 </div>
 

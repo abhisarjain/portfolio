@@ -22,10 +22,10 @@ export default function Navbar({setEntered}){
 
             <div className="nav-right">
 
-                <a href="#">Skills</a>
-                <a href="#">Exp</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Exp</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
 
                 <button onClick={handleExit} className="exit-btn">
                     🚪 Exit
