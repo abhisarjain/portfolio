@@ -83,7 +83,7 @@
         {
           "id": "wheatbazar",
           "name": "Wheat Bazar",
-          "image": "/assets/projects/payment.png",
+          "image": "/images/wheatbazar.png",
           "shortDescription": "Built backend services for wheatbazar.com using Spring Boot and MS SQL.",
           "fullDescription": "• Built backend services for wheatbazar.com using Spring Boot and MS SQL.\n• Designed and optimized B2B Marketplace APIs for secure and scalable transactions.\n• Integrated database queries with Spring Data JPA improving query performance.",
           "tech": [
