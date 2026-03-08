@@ -4,7 +4,7 @@ import "./AvatarGuide.css";
 
 export default function AvatarGuide({ message, animate }) {
 
-  const [enter, setEnter] = useState(false);
+  const [enter, setEnter] = useState(!animate);
 
   useEffect(() => {
 

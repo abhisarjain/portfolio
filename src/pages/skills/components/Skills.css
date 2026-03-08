@@ -1,221 +1,106 @@
 .skills-container {
-
     height: 100vh;
     width: 100%;
-
     display: flex;
     align-items: center;
- 
-
     position: relative;
-    
-
 }
 
-
-
-/* right section */
-
 .skills-right {
-
     position: absolute;
-
-    width:40%;
-    padding:70px;
+    width: 40%;
+    padding: 70px;
     left: 37%;
     background: rgba(40, 40, 40, 0.6);
-
     backdrop-filter: blur(10px);
-
-   
-
     border-radius: 12px;
     animation: skillsEnter 1s ease forwards;
-
 }
 
 @keyframes skillsEnter {
-
-    from {
-
-        transform: translateX(200px);
-        opacity: 0;
-
-    }
-
-    to {
-
-        transform: translateX(0);
-        opacity: 1;
-
-    }
-
+    from { transform: translateX(200px); opacity: 0; }
+    to   { transform: translateX(0);     opacity: 1; }
 }
 
 .skills-title {
-
     font-size: 36px;
     margin-bottom: 20px;
     position: relative;
-
 }
 
 .skills-title::after {
-
     content: "";
-
     display: block;
-
     width: 80px;
     height: 2px;
-
     background: white;
-
     margin-top: 10px;
-
 }
 
-.primary-title {
-
-    margin-bottom: 20px;
-
-}
-
-/* icons */
+.primary-title { margin-bottom: 20px; }
 
 .primary-icons {
-
     display: flex;
     gap: 25px;
-
     margin-bottom: 20px;
-
 }
 
 .primary-icons img {
-
     width: 70px;
     height: 70px;
     scale: 1.5;
     transition: 0.3s;
-
-
 }
 
 .primary-icons img:hover {
-
     transform: scale(1.2);
-
-filter:drop-shadow(0 0 5px rgba(255,255,255,0.6));
-
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.6));
 }
 
-/* other skills */
-
 .other-title {
-
     margin-bottom: 10px;
     margin-top: 30px;
     position: relative;
-
 }
 
 .other-title::before {
-
     content: "";
-
     display: block;
-
     width: 100%;
     height: 1px;
-
     background: rgba(255, 255, 255, 0.2);
-
     margin-bottom: 20px;
-
 }
 
-.other-skills {
+.other-skills { opacity: 0.8; }
 
-    opacity: 0.8;
-
+@media (max-width: 1024px) {
+    .primary-icons { flex-wrap: wrap; justify-content: center; }
 }
 
-
-/* ========================= */
-/* TABLET */
-/* ========================= */
-
-@media (max-width:1024px){
-
-.primary-icons{
-
-flex-wrap:wrap;
-justify-content:center;
-
+@media (max-width: 768px) {
+    .skills-container {
+        height: auto;
+        min-height: 100vh;
+        overflow-x: hidden;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-right {
+        position: relative;
+        left: unset;
+        top: unset;
+        width: 85%;
+        padding: 25px 30px;
+        margin: 10px auto 40px;
+        text-align: center;
+    }
+    .primary-icons { flex-wrap: wrap; justify-content: center; }
+    .skills-title { font-size: 28px; }
 }
 
-}
-/* ========================= */
-/* MOBILE */
-/* ========================= */
-
-@media (max-width:768px){
-
-.skills-right{
-    top : 28%;
-}
-}
-/* ========================= */
-/* SMALL PHONES */
-/* ========================= */
-
-@media (max-width:480px){
-  /* skills card niche */
-
-  .skills-container{
-    overflow: scroll;
-  }
-
-.skills-right{
-
-width:75%;
-
-left:6.5%;
-top:70%;
-
-transform:translateX(-50%);
-
-padding:25px;
-
-}
-
-/* icons wrap */
-
-.primary-icons{
-
-flex-wrap:wrap;
-justify-content:center;
-
-}
-
-.primary-icons img{
-
-width:55px;
-height:55px;
-scale:1.2;
-
-}
-.skills-title {
-
-    font-size: 24px;
-    margin-bottom: 20px;
-    position: relative;
-
-}
-.primary-title {
-
-    margin-bottom: 20px;
-
-}
+@media (max-width: 480px) {
+    .skills-right { width: 86%; padding: 25px; }
+    .primary-icons img { width: 55px; height: 55px; scale: 1.2; }
+    .skills-title { font-size: 24px; }
 }

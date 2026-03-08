@@ -1,0 +1,68 @@
+{
+  "personalProjects": [
+    {
+      "id": "portfolio",
+      "name": "Developer Portfolio",
+      "image": "/assets/projects/portfolio.png",
+      "shortDescription": "Personal portfolio showcasing skills, projects and experience.",
+      "fullDescription": "A fully animated developer portfolio built with React. It showcases skills, enterprise experience and personal projects. The site includes dynamic sections, smooth animations, reusable components and responsive design for all devices.",
+      "tech": ["React", "CSS", "Vercel"],
+      "github": "https://github.com/username/portfolio",
+      "live": "https://portfolio-demo.com"
+    },
+    {
+      "id": "chatapp",
+      "name": "Real Time Chat App",
+      "image": "/assets/projects/chatapp.png",
+      "shortDescription": "Real time messaging application using WebSocket.",
+      "fullDescription": "A full stack real-time chat application supporting multiple users and instant message delivery using WebSockets. Includes authentication, live user status, message history and responsive UI built with React and Spring Boot.",
+      "tech": ["React", "Spring Boot", "WebSocket", "MySQL"],
+      "github": "https://github.com/username/chatapp",
+      "live": "https://chat-demo.com"
+    }
+  ],
+
+  "enterpriseProjects": [
+    {
+      "orgId": "abc-corp",
+      "orgName": "ABC Corp",
+      "role": "Full Stack Developer",
+      "duration": "2023 - Present",
+      "projects": [
+        {
+          "id": "fraud-detection",
+          "name": "Fraud Detection System",
+          "image": "/assets/projects/fraud.png",
+          "shortDescription": "Real time system to detect suspicious financial transactions.",
+          "fullDescription": "Designed and implemented a microservice-based fraud detection system that processes large volumes of financial transactions in real time. The system uses event streaming with Kafka, caching with Redis and scalable backend services built using Spring Boot.",
+          "tech": ["Spring Boot", "Kafka", "Redis", "AWS"]
+        },
+        {
+          "id": "admin-dashboard",
+          "name": "Enterprise Admin Dashboard",
+          "image": "/assets/projects/admin-dashboard.png",
+          "shortDescription": "Internal dashboard for managing enterprise operations.",
+          "fullDescription": "Built an enterprise level admin dashboard used internally by operations teams to monitor transactions, manage users and generate reports. The system includes role based access control and high performance backend APIs.",
+          "tech": ["React", "Spring Boot", "MySQL"]
+        }
+      ]
+    },
+
+    {
+      "orgId": "xyz-labs",
+      "orgName": "XYZ Labs",
+      "role": "Backend Developer",
+      "duration": "2022 - 2023",
+      "projects": [
+        {
+          "id": "payment-gateway",
+          "name": "Payment Gateway Integration",
+          "image": "/assets/projects/payment.png",
+          "shortDescription": "Secure payment gateway integration for enterprise platform.",
+          "fullDescription": "Implemented secure payment processing for enterprise applications including retry mechanisms, transaction logging and failure recovery. Integrated third party APIs and ensured compliance with payment security standards.",
+          "tech": ["Spring Boot", "Stripe API", "MySQL"]
+        }
+      ]
+    }
+  ]
+}
