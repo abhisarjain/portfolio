@@ -3,64 +3,94 @@
     {
       "id": "portfolio",
       "name": "Developer Portfolio",
-      "image": "/assets/projects/portfolio.png",
+      "image": "/images/portfolio.png",
       "shortDescription": "Personal portfolio showcasing skills, projects and experience.",
       "fullDescription": "A fully animated developer portfolio built with React. It showcases skills, enterprise experience and personal projects. The site includes dynamic sections, smooth animations, reusable components and responsive design for all devices.",
-      "tech": ["React", "CSS", "Vercel"],
-      "github": "https://github.com/username/portfolio",
-      "live": "https://portfolio-demo.com"
+      "tech": [
+        "React",
+        "Vercel"
+      ],
+      "github": "https://github.com/abhisarjain/portfolio",
+      "live": "https://abhisarjain.com"
     },
     {
-      "id": "chatapp",
-      "name": "Real Time Chat App",
-      "image": "/assets/projects/chatapp.png",
-      "shortDescription": "Real time messaging application using WebSocket.",
-      "fullDescription": "A full stack real-time chat application supporting multiple users and instant message delivery using WebSockets. Includes authentication, live user status, message history and responsive UI built with React and Spring Boot.",
-      "tech": ["React", "Spring Boot", "WebSocket", "MySQL"],
+      "id": "artisansgallery",
+      "name": "Artisans Gallery",
+      "image": "/images/artisansgallery.png",
+      "shortDescription": "Artisans Gallery is an online platform where artisans can showcase and sell their handmade products.",
+      "fullDescription": "Artisans Gallery is an online platform where artisans can showcase and sell their handmade products. The platform allows customers to browse through various categories of products such as home decor, jewelry, clothing, and more.",
+      "tech": [
+        "React",
+        "Spring Boot",
+        "MySQL"
+      ],
       "github": "https://github.com/username/chatapp",
       "live": "https://chat-demo.com"
     }
   ],
-
   "enterpriseProjects": [
     {
-      "orgId": "abc-corp",
-      "orgName": "ABC Corp",
-      "role": "Full Stack Developer",
+      "orgId": "vw",
+      "orgName": "Volkswagen Group Digital Solutions",
+      "role": "Software Engineer",
       "duration": "2023 - Present",
       "projects": [
         {
-          "id": "fraud-detection",
-          "name": "Fraud Detection System",
-          "image": "/assets/projects/fraud.png",
-          "shortDescription": "Real time system to detect suspicious financial transactions.",
-          "fullDescription": "Designed and implemented a microservice-based fraud detection system that processes large volumes of financial transactions in real time. The system uses event streaming with Kafka, caching with Redis and scalable backend services built using Spring Boot.",
-          "tech": ["Spring Boot", "Kafka", "Redis", "AWS"]
+          "id": "audi-ai-factory",
+          "name": "Audi AI Factory",
+          "image": "/images/audi.png",
+          "shortDescription": "Architected a scalable chatbot blueprint with reusable microservices and REST APIs.",
+          "fullDescription": "• Architected a scalable chatbot blueprint with reusable microservices and REST APIs.\n• Led frontend development of the admin portal using ReactJS and Redux.\n• Implemented an intent classification engine using Python.\n• Built backend services for Speech-to-Text and Text-to-Speech using Azure Speech Services.\n• Deployed and managed the solution on Microsoft Azure Cloud, enabling rapid chatbot provisioning.",
+          "tech": [
+            "React",
+            "FastAPI",
+            "Azure"
+          ]
         },
         {
-          "id": "admin-dashboard",
-          "name": "Enterprise Admin Dashboard",
-          "image": "/assets/projects/admin-dashboard.png",
-          "shortDescription": "Internal dashboard for managing enterprise operations.",
-          "fullDescription": "Built an enterprise level admin dashboard used internally by operations teams to monitor transactions, manage users and generate reports. The system includes role based access control and high performance backend APIs.",
-          "tech": ["React", "Spring Boot", "MySQL"]
+          "id": "p42m",
+          "name": "P42M",
+          "image": "/images/vw.png",
+          "shortDescription": "Implemented PKI Smart Card Authentication in Spring Boot microservices, improving login security.",
+          "fullDescription": "• Implemented PKI Smart Card Authentication in Spring Boot microservices, improving login security.\n• Integrated Redis Cache for Session Management.\n• Applied Spring Security, OAuth2, and JWT for robust API protection.\n• Automated deployments using AWS CI/CD, Docker.",
+          "tech": [
+            "SpringBoot",
+            "Redis",
+            "MySQL"
+          ]
+        },
+        {
+          "id": "sect",
+          "name": "Security Tracker",
+          "image": "/images/vw.png",
+          "shortDescription": "Developed advanced ReactJS frontend with complex filtering and search, improving usability.",
+          "fullDescription": "• Developed advanced ReactJS frontend with complex filtering and search, improving usability.\n• Built complete AWS ECS CI/CD Pipeline integrating CodeCommit and CodeBuild.\n• Deployed microservices in Docker Containers ensuring high availability.",
+          "tech": [
+            "React",
+            "Spring Boot",
+            "MySQL",
+            "AWS"
+          ]
         }
       ]
     },
-
     {
-      "orgId": "xyz-labs",
-      "orgName": "XYZ Labs",
-      "role": "Backend Developer",
+      "orgId": "niagro",
+      "orgName": "NIAGRO commodities marketplace Pvt. Ltd.",
+      "role": "Backend Developer intern",
       "duration": "2022 - 2023",
       "projects": [
         {
-          "id": "payment-gateway",
-          "name": "Payment Gateway Integration",
+          "id": "wheatbazar",
+          "name": "Wheat Bazar",
           "image": "/assets/projects/payment.png",
-          "shortDescription": "Secure payment gateway integration for enterprise platform.",
-          "fullDescription": "Implemented secure payment processing for enterprise applications including retry mechanisms, transaction logging and failure recovery. Integrated third party APIs and ensured compliance with payment security standards.",
-          "tech": ["Spring Boot", "Stripe API", "MySQL"]
+          "shortDescription": "Built backend services for wheatbazar.com using Spring Boot and MS SQL.",
+          "fullDescription": "• Built backend services for wheatbazar.com using Spring Boot and MS SQL.\n• Designed and optimized B2B Marketplace APIs for secure and scalable transactions.\n• Integrated database queries with Spring Data JPA improving query performance.",
+          "tech": [
+            "Spring Boot",
+            "Stripe API",
+            "MySQL"
+          ]
         }
       ]
     }

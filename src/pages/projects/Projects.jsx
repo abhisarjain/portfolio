@@ -40,8 +40,13 @@ function ProjectCard({ project, isEnterprise }) {
                         <h3 className="project-name">{project.name}</h3>
 
                         <div className="project-full-desc-scroll">
-                            <p className="project-full-desc">{project.fullDescription}</p>
-                        </div>
+                            <p className="project-full-desc">
+                                {project.fullDescription.split('\n').map((line, i) => (
+                                    <span key={i} style={{ display: 'block', marginBottom: '6px' }}>
+                                        {line}
+                                    </span>
+                                ))}
+                            </p>                        </div>
 
                         <div className="project-tech-pills" style={{ marginTop: "12px" }}>
                             {project.tech.map((t) => (
